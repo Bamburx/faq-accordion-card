@@ -50,6 +50,7 @@ body {
 .faq-container {
   width: 90%;
   margin: 10px auto;
+  padding-bottom: 50px;
 }
 
 .faq-element {
@@ -66,6 +67,7 @@ margin: 10px auto;
 .faq-title-text {
 font-weight: 700;
 font-size: 15px;
+font-weight: bold;
 }
 
 .faq-title-arrow {
