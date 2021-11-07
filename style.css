@@ -49,4 +49,31 @@ body {
 
 .faq-container {
   width: 90%;
+  margin: 10px auto;
+  padding-bottom: 50px;
+}
+
+.faq-element {
+  border-bottom: solid 1px;
+}
+
+.faq-title {
+display: flex;
+justify-content: space-between;
+margin: 10px auto;
+
+}
+
+.faq-title-text {
+font-weight: 700;
+font-size: 15px;
+font-weight: bold;
+}
+
+.faq-title-arrow {
+
+}
+
+.faq-content {
+margin: 10px auto 20px auto;
 }
