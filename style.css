@@ -28,7 +28,6 @@ body {
 }
 
 .img-container {
-  height: 80px;
   width: 100%;
   /* margin: 0 auto; */
   display: flex;
@@ -37,9 +36,8 @@ body {
 }
 
 .img {
-  max-width: 280px;
-  position: relative;
-  top: -80%;
+  width: 75%;
+  margin-top: -33%;
 }
 
 .header-container {
