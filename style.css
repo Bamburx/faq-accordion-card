@@ -18,25 +18,22 @@ body {
 
 .card {
   background: #fefefe;
-  width: min(75% - 8px);
-    /* width: 80% - 64px; */
-  min-height: 50%;  
-  border-radius: 30px;
-  padding: 0 10px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.363);
+  max-height: 60%;
+  width: min(16rem);
+  border-radius: 1.875rem;
+  padding: 0 0.5rem 3rem 0.5rem;
+  box-shadow: 0 1.75rem 3.75rem rgba(0, 0, 0, 0.363);
   display: flex;
   flex-direction: column;
 }
 
 .img-container {
   width: 100%;
-  /* margin: 0 auto; */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
-.img {
+.img-container > img {
   width: 75%;
   margin-top: -33%;
 }
@@ -46,34 +43,34 @@ body {
   text-align: center;
   margin: 0 auto;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .faq-container {
   width: 90%;
-  margin: 10px auto;
-  padding-bottom: 50px;
+  margin: .625rem auto;
+  /* padding-bottom: 3.125rem; */
 }
 
 .faq-element {
-  border-bottom: solid 1px;
+  border-bottom: solid .0625rem;
   border-color: hsl(240, 5%, 91%);
 }
 
 .faq-title {
 display: flex;
 justify-content: space-between;
-margin: 8px auto;
+margin: .5rem auto;
 
 }
 
 .faq-title-text {
-font-size: 12px;
+font-size: .75rem;
 color: hsl(237, 12%, 33%);
 }
 
 .faq-title-text:hover {
-  color: orange;
+  color: hsl(14, 88%, 65%);
 }
 
 .active .faq-title-text {
@@ -86,26 +83,27 @@ color: hsl(237, 12%, 33%);
   } 
 
 .faq-content {
-margin: 10px auto 20px auto;
+margin: .625rem auto 1.25rem auto;
 height: 0;
 overflow: hidden;
 transition: 0.5s;
-padding-right: 10px;
+padding-right: .625rem;
 }
 
 .active .faq-content {
-  font-size: 12px;
+  font-size: .75rem;
   color: hsl(237, 12%, 33%);
   overflow: visible;
-  height: 35px;
+  height: 2.1875rem;
 }
 
-@media (min-width: 450px) {
+/* widder layout */
+@media (min-width: 40rem) {
   .card {
   align-items: center;
   flex-direction: row;
   padding: 0;
-  width: min(66%, 1440px); 
+  width: min(66%, 64rem); 
   }
 
   
@@ -116,28 +114,31 @@ padding-right: 10px;
     /* align-items: center; */
   }
   
-  .img {
+  .img-container > img {
     width: 100%;
     margin-top: 0%;
     margin-left: -33%;
-
   }
 
+/* .img-container > img {
+  width: auto; 
+  height: 350px; 
+  margin-top: auto; 
+  margin-left: -33%; 
+  object-fit: contain;
+} */
+
   .faq-main-content {
-    width: 50%;
+    width: 40%;
   }
 
   .header-container {
-    width: 90%;
     text-align: start;
-    /* margin: 0 auto; */
-    font-weight: bold;
-    font-size: 25px;
   }
   
   .faq-container {
     width: 90%;
-    margin: 10px auto;
-    padding-bottom: 50px;
+    margin: .625rem auto;
+    padding-bottom: 3.125rem;
   }
 }
